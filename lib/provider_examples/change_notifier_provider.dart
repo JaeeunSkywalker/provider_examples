@@ -39,7 +39,8 @@ class ChangeNotifierProvider extends StatelessWidget {
             PaddedText(text),
             ElevatedButton(
               onPressed: () {
-                PlatformService.openUrl('http://google.com');
+                PlatformService.openUrl(
+                    'https://github.com/JaeeunSkywalker/provider_examples/blob/main/lib/provider_examples/change_notifier_provider.dart');
               },
               child: locale.toString() == "ko_KR"
                   ? const Text('깃헙에서 코드 보기')
