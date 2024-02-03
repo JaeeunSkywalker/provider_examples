@@ -1,0 +1,234 @@
+{
+  "tabs": [
+    {
+      "index": "1",
+      "title": "ChangeNotifierProvider",
+      "className": "ChangeNotifierProvider"
+    },
+    {
+      "index": "2",
+      "title": "ChangeNotifierProxyProvider",
+      "className": "ChangeNotifierProxyProvider"
+    },
+    {
+      "index": "3",
+      "title": "ChangeNotifierProxyProvider0",
+      "className": "ChangeNotifierProxyProvider0"
+    },
+    {
+      "index": "4",
+      "title": "ChangeNotifierProxyProvider2",
+      "className": "ChangeNotifierProxyProvider2"
+    },
+    {
+      "index": "5",
+      "title": "ChangeNotifierProxyProvider3",
+      "className": "ChangeNotifierProxyProvider3"
+    },
+    {
+      "index": "6",
+      "title": "ChangeNotifierProxyProvider4",
+      "className": "ChangeNotifierProxyProvider4"
+    },
+    {
+      "index": "7",
+      "title": "ChangeNotifierProxyProvider5",
+      "className": "ChangeNotifierProxyProvider5"
+    },
+    {
+      "index": "8",
+      "title": "ChangeNotifierProxyProvider6",
+      "className": "ChangeNotifierProxyProvider6"
+    },
+    {
+      "index": "9",
+      "title": "Consumer",
+      "className": "Consumer"
+    },
+    {
+      "index": "10",
+      "title": "Consumer2",
+      "className": "Consumer2"
+    },
+    {
+      "index": "11",
+      "title": "Consumer3",
+      "className": "Consumer3"
+    },
+    {
+      "index": "12",
+      "title": "Consumer4",
+      "className": "Consumer4"
+    },
+    {
+      "index": "13",
+      "title": "Consumer5",
+      "className": "Consumer5"
+    },
+    {
+      "index": "14",
+      "title": "Consumer6",
+      "className": "Consumer6"
+    },
+    {
+      "index": "15",
+      "title": "DeferredInheritedProvider",
+      "className": "DeferredInheritedProvider"
+    },
+    {
+      "index": "16",
+      "title": "FutureProvider",
+      "className": "FutureProvider"
+    },
+    {
+      "index": "17",
+      "title": "InheritedContext",
+      "className": "InheritedContext"
+    },
+    {
+      "index": "18",
+      "title": "InheritedProvider",
+      "className": "InheritedProvider"
+    },
+    {
+      "index": "19",
+      "title": "ListenableProvider",
+      "className": "ListenableProvider"
+    },
+    {
+      "index": "20",
+      "title": "ListenableProxyProvider",
+      "className": "ListenableProxyProvider"
+    },
+    {
+      "index": "21",
+      "title": "ListenableProxyProvider0",
+      "className": "ListenableProxyProvider0"
+    },
+    {
+      "index": "22",
+      "title": "ListenableProxyProvider2",
+      "className": "ListenableProxyProvider2"
+    },
+    {
+      "index": "23",
+      "title": "ListenableProxyProvider3",
+      "className": "ListenableProxyProvider3"
+    },
+    {
+      "index": "24",
+      "title": "ListenableProxyProvider4",
+      "className": "ListenableProxyProvider4"
+    },
+    {
+      "index": "25",
+      "title": "ListenableProxyProvider5",
+      "className": "ListenableProxyProvider5"
+    },
+    {
+      "index": "26",
+      "title": "ListenableProxyProvider6",
+      "className": "ListenableProxyProvider6"
+    },
+    {
+      "index": "27",
+      "title": "MultiProvider",
+      "className": "MultiProvider"
+    },
+    {
+      "index": "28",
+      "title": "Provider",
+      "className": "Provider"
+    },
+    {
+      "index": "29",
+      "title": "ProviderBinding",
+      "className": "ProviderBinding"
+    },
+    {
+      "index": "30",
+      "title": "ProxyProvider",
+      "className": "ProxyProvider"
+    },
+    {
+      "index": "31",
+      "title": "ProxyProvider0",
+      "className": "ProxyProvider0"
+    },
+    {
+      "index": "32",
+      "title": "ProxyProvider2",
+      "className": "ProxyProvider2"
+    },
+    {
+      "index": "33",
+      "title": "ProxyProvider3",
+      "className": "ProxyProvider3"
+    },
+    {
+      "index": "34",
+      "title": "ProxyProvider4",
+      "className": "ProxyProvider4"
+    },
+    {
+      "index": "35",
+      "title": "ProxyProvider5",
+      "className": "ProxyProvider5"
+    },
+    {
+      "index": "36",
+      "title": "ProxyProvider6",
+      "className": "ProxyProvider6"
+    },
+    {
+      "index": "37",
+      "title": "ReassembleHandler",
+      "className": "ReassembleHandler"
+    },
+    {
+      "index": "38",
+      "title": "Selector",
+      "className": "Selector"
+    },
+    {
+      "index": "39",
+      "title": "Selector0",
+      "className": "Selector0"
+    },
+    {
+      "index": "40",
+      "title": "Selector2",
+      "className": "Selector2"
+    },
+    {
+      "index": "41",
+      "title": "Selector3",
+      "className": "Selector3"
+    },
+    {
+      "index": "42",
+      "title": "Selector4",
+      "className": "Selector4"
+    },
+    {
+      "index": "43",
+      "title": "Selector5",
+      "className": "Selector5"
+    },
+    {
+      "index": "44",
+      "title": "Selector6",
+      "className": "Selector6"
+    },
+    {
+      "index": "45",
+      "title": "StreamProvider",
+      "className": "StreamProvider"
+    },
+    {
+      "index": "46",
+      "title": "ValueListenableProvider",
+      "className": "ValueListenableProvider"
+    }
+  ]
+}
