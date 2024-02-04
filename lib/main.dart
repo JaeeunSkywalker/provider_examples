@@ -3,7 +3,9 @@ import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_sample/app_localizations_delegate.dart';
 import 'package:provider_sample/home_page.dart';
-import 'package:provider_sample/models/counter_model.dart';
+import 'package:provider_sample/models/for_change_notifier_provider/counter_model.dart';
+import 'package:provider_sample/models/for_change_notifier_proxy_providers/login_state.dart';
+import 'package:provider_sample/models/for_change_notifier_proxy_providers/user_profile.dart';
 import 'package:provider_sample/models/tab_info.dart';
 import 'package:provider_sample/services/data_service.dart';
 
@@ -11,9 +13,17 @@ void main() {
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(
+        ChangeNotifierProvider<CounterModel>(
           create: (context) => CounterModel(),
         ),
+        ChangeNotifierProvider<LoginState>(
+          create: (context) => LoginState(),
+        ),
+        ChangeNotifierProxyProvider<LoginState, UserProfile>(
+          create: (context) => UserProfile(),
+          update: (context, loginState, userProfile) =>
+              userProfile!..updateFromLoginState(loginState),
+        )
       ],
       child: const MyApp(),
     ),
@@ -37,7 +47,6 @@ class _MyAppState extends State<MyApp> {
   void _setLocale(Locale locale) {
     setState(() {
       _appLocale = locale;
-
     });
   }
 
