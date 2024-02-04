@@ -7,4 +7,5 @@
 2024-02-03: 기본 UI 완성
             한글, 영어 지원
             ChangeNotifierProvider 완성
+2024-02-04: ChangeNotifierProxyProvider 완성
 </pre>
