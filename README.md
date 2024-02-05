@@ -8,4 +8,5 @@
             한글, 영어 지원
             ChangeNotifierProvider 완성
 2024-02-04: ChangeNotifierProxyProvider 완성
+2024-02-06: ChangeNotifierProxyProvider0 완성(with Supabase)
 </pre>

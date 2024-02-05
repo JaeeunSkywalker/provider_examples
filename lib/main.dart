@@ -2,14 +2,23 @@ import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
 import 'package:provider/provider.dart';
 import 'package:provider_sample/app_localizations_delegate.dart';
+import 'package:provider_sample/consts/config_keywords.dart';
 import 'package:provider_sample/home_page.dart';
 import 'package:provider_sample/models/for_change_notifier_provider/counter_model.dart';
 import 'package:provider_sample/models/for_change_notifier_proxy_providers/login_state.dart';
 import 'package:provider_sample/models/for_change_notifier_proxy_providers/user_profile.dart';
 import 'package:provider_sample/models/tab_info.dart';
+import 'package:provider_sample/provider_examples/change_notifier_proxy_providers/supabase_notifier.dart';
 import 'package:provider_sample/services/data_service.dart';
+import 'package:supabase_flutter/supabase_flutter.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+
+  await Supabase.initialize(
+    url: supabase_url,
+    anonKey: supabase_anon_key,
+  );
   runApp(
     MultiProvider(
       providers: [
@@ -23,7 +32,11 @@ void main() {
           create: (context) => UserProfile(),
           update: (context, loginState, userProfile) =>
               userProfile!..updateFromLoginState(loginState),
-        )
+        ),
+        ChangeNotifierProxyProvider0<SupabaseNotifier>(
+          create: (context) => SupabaseNotifier(),
+          update: (_, notifier) => notifier!..fetchData(),
+        ),
       ],
       child: const MyApp(),
     ),
