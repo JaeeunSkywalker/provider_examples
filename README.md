@@ -9,4 +9,5 @@
             ChangeNotifierProvider 완성
 2024-02-04: ChangeNotifierProxyProvider 완성
 2024-02-06: ChangeNotifierProxyProvider0 완성(with Supabase)
+2024-02-10: ChangeNotifierProxyProvider2 완성
 </pre>

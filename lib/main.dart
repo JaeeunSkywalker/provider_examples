@@ -6,11 +6,16 @@ import 'package:provider_sample/consts/config_keywords.dart';
 import 'package:provider_sample/home_page.dart';
 import 'package:provider_sample/models/for_change_notifier_provider/counter_model.dart';
 import 'package:provider_sample/models/for_change_notifier_proxy_providers/login_state.dart';
+import 'package:provider_sample/models/for_change_notifier_proxy_providers/settings_notifier.dart';
 import 'package:provider_sample/models/for_change_notifier_proxy_providers/user_profile.dart';
 import 'package:provider_sample/models/tab_info.dart';
 import 'package:provider_sample/provider_examples/change_notifier_proxy_providers/supabase_notifier.dart';
 import 'package:provider_sample/services/data_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:provider_sample/models/for_change_notifier_proxy_providers/user.dart'
+    as user;
+
+import 'models/for_change_notifier_proxy_providers/settings.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -36,6 +41,21 @@ void main() async {
         ChangeNotifierProxyProvider0<SupabaseNotifier>(
           create: (context) => SupabaseNotifier(),
           update: (_, notifier) => notifier!..fetchData(),
+        ),
+        Provider<user.User>(
+          create: (_) => user.User('Jane Doe', 17),
+        ),
+        Provider<Settings>(
+          create: (_) => Settings(false),
+        ),
+        ChangeNotifierProxyProvider2<user.User, Settings, SettingsNotifier>(
+          create: (context) => SettingsNotifier(
+            Settings(false),
+          ),
+          update: (_, user, settings, settingsNotifier) {
+            final isDarkMode = user.age >= 30 ? true : settings.isDarkMode;
+            return SettingsNotifier(Settings(isDarkMode));
+          },
         ),
       ],
       child: const MyApp(),
@@ -65,36 +85,44 @@ class _MyAppState extends State<MyApp> {
 
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      locale: _appLocale,
-      localizationsDelegates: [
-        AppLocalizationsDelegate(),
-        GlobalMaterialLocalizations.delegate,
-        GlobalWidgetsLocalizations.delegate,
-        GlobalCupertinoLocalizations.delegate,
-      ],
-      supportedLocales: const [
-        Locale('ko', 'KR'),
-        Locale('en', 'US'),
-      ],
-      home: FutureBuilder<List<TabInfo>>(
-        future: loadToTabInfo(),
-        builder: (context, snapshot) {
-          if (snapshot.hasData) {
-            final tabs = snapshot.data;
-            return HomePage(
-              tabs: tabs!,
-              setLocale: _setLocale,
-              locale: _appLocale,
-            );
-          } else if (snapshot.hasError) {
-            return Text('Error: ${snapshot.error}');
-          } else {
-            return const CircularProgressIndicator();
-          }
-        },
-      ),
+    return Consumer<SettingsNotifier>(
+      builder: (context, settingsNotifier, child) {
+        return MaterialApp(
+          theme: ThemeData.light(),
+          darkTheme: ThemeData.dark(),
+          themeMode:
+              settingsNotifier.isDarkMode ? ThemeMode.dark : ThemeMode.light,
+          debugShowCheckedModeBanner: false,
+          locale: _appLocale,
+          localizationsDelegates: [
+            AppLocalizationsDelegate(),
+            GlobalMaterialLocalizations.delegate,
+            GlobalWidgetsLocalizations.delegate,
+            GlobalCupertinoLocalizations.delegate,
+          ],
+          supportedLocales: const [
+            Locale('ko', 'KR'),
+            Locale('en', 'US'),
+          ],
+          home: FutureBuilder<List<TabInfo>>(
+            future: loadToTabInfo(),
+            builder: (context, snapshot) {
+              if (snapshot.hasData) {
+                final tabs = snapshot.data;
+                return HomePage(
+                  tabs: tabs!,
+                  setLocale: _setLocale,
+                  locale: _appLocale,
+                );
+              } else if (snapshot.hasError) {
+                return Text('Error: ${snapshot.error}');
+              } else {
+                return const CircularProgressIndicator();
+              }
+            },
+          ),
+        );
+      },
     );
   }
 }
