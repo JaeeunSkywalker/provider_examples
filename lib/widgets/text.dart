@@ -2,35 +2,30 @@ import 'package:flutter/material.dart';
 import 'package:provider_sample/services/platform_service.dart';
 
 class PaddedText extends StatelessWidget {
-  final String text;
+  final String? text;
   final EdgeInsetsGeometry padding;
 
   const PaddedText(
-      {required this.text,
-      this.padding = const EdgeInsets.all(16.0),
-      super.key});
+      {this.text, this.padding = const EdgeInsets.all(16.0), super.key});
 
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: padding,
       child: Text(
-        text,
+        text ?? '',
       ),
     );
   }
 }
 
 class CommonText extends StatelessWidget {
-  final String text;
+  final String? text;
   final String githubUrl;
-  final String locale;
+  final String? locale;
 
   const CommonText(
-      {required this.text,
-      required this.githubUrl,
-      required this.locale,
-      super.key});
+      {this.text, required this.githubUrl, this.locale, super.key});
 
   @override
   Widget build(BuildContext context) {

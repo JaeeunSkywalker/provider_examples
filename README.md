@@ -10,6 +10,7 @@
 2024-02-04: ChangeNotifierProxyProvider 완성
 2024-02-06: ChangeNotifierProxyProvider0 완성(with Supabase)
 2024-02-10: ChangeNotifierProxyProvider2 완성
+2024-02-11: ChangeNotifierProxyProvider3 완성
 </pre>
 <br>
 .gitignore에 처리했는데 뭔가 내가 잘못했는지 등록하지 않으려던 파일이 등록되었다.<br>
