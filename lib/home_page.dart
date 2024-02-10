@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'models/tab_info.dart';
+import 'models_and_providers//tab_info.dart';
 import 'services/tab_class_factory.dart';
 
 class HomePage extends StatelessWidget {

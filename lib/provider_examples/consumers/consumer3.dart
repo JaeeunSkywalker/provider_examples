@@ -7,6 +7,6 @@ class Consumer3 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text(runtimeType.toString());
+    return Text('The content is the same as the Consumer page.');
   }
 }

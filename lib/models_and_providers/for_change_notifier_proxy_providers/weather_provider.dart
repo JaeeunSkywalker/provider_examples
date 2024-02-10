@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:geolocator/geolocator.dart';
 import 'package:provider_sample/consts/config_keywords.dart';
 import 'package:dio/dio.dart';
-import 'package:provider_sample/services/convertKelvinToCelsius.dart';
+import 'package:provider_sample/services/convert_kelvin_to_celsius.dart';
 
 class WeatherProvider with ChangeNotifier {
   final String _apiKey = open_weather_map_api_key;

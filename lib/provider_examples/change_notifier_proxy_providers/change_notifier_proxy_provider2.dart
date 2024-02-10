@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/settings_notifier.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/settings_notifier.dart';
 
 import '../../consts/github_url.dart';
 import '../../widgets/text.dart';

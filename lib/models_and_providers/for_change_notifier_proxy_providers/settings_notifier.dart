@@ -15,5 +15,4 @@ class SettingsNotifier with ChangeNotifier {
   }
 
   bool get isDarkMode => _settings.isDarkMode;
-
 }

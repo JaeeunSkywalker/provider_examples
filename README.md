@@ -14,13 +14,13 @@
             6. ChangeNotifierProxyProvider4 (프로바이더를 4개 이상 사용하는 건 시간 관계 상 구현하지 않습니다)
             7. ChangeNotifierProxyProvider5 (프로바이더를 4개 이상 사용하는 건 시간 관계 상 구현하지 않습니다)
             8. ChangeNotifierProxyProvider6 (프로바이더를 4개 이상 사용하는 건 시간 관계 상 구현하지 않습니다)
-            9. Consumer  
-            10. Consumer2
-            11. Consumer3
-            12. Consumer4
-            13. Consumer5
-            14. Consumer6
-            15. DeferredInheritedProvider
+            9. Consumer (프로바이더 통해 코드 구현 되어 있음)   
+            10. Consumer2 (구현하지 않음)
+            11. Consumer3 (프로바이더 통해 코드 구현 되어 있음)
+            12. Consumer4 (구현하지 않음)
+            13. Consumer5 (구현하지 않음)
+            14. Consumer6 (구현하지 않음)
+            15. DeferredInheritedProvider 
             16. FutureProvider
             17. InheritedContext
             18. InheritedProvider
@@ -53,6 +53,3 @@
             45. StreamProvider 
             46. ValueListenableProvider 
 </pre>
-<br>
-.gitignore에 처리했는데 뭔가 내가 잘못했는지 등록하지 않으려던 파일이 등록되었다.<br>
-key가 노출되어 소스와 연동된 Supabase 프로젝트를 pause했다. 🥹🥹🥹<br>

@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 class ThemeSettingsProvider with ChangeNotifier {
-   String _selectedImage;
+  String _selectedImage;
 
-   ThemeSettingsProvider(this._selectedImage);
+  ThemeSettingsProvider(this._selectedImage);
 
   String get selectedImage => _selectedImage;
 

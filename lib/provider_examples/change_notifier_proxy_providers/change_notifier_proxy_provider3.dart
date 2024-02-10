@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 
 import '../../consts/github_url.dart';
-import '../../models/for_change_notifier_proxy_providers/location_provider.dart';
-import '../../models/for_change_notifier_proxy_providers/theme_settings_provider.dart';
-import '../../models/for_change_notifier_proxy_providers/weather_provider.dart';
+import '../../models_and_providers//for_change_notifier_proxy_providers/location_provider.dart';
+import '../../models_and_providers//for_change_notifier_proxy_providers/theme_settings_provider.dart';
+import '../../models_and_providers//for_change_notifier_proxy_providers/weather_provider.dart';
 import 'package:provider/provider.dart' as provider;
 
 import '../../widgets/text.dart';

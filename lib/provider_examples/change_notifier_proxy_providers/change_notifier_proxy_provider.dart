@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider_sample/consts/github_url.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/login_state.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/user_profile.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/login_state.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/user_profile.dart';
 import 'package:provider/provider.dart' as provider;
 
-import '../../models/for_change_notifier_provider/counter_model.dart';
+import '../../models_and_providers//for_change_notifier_provider/counter_model.dart';
 import '../../widgets/text.dart';
 
 class ChangeNotifierProxyProvider extends StatelessWidget {

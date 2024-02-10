@@ -12,7 +12,7 @@ class ChangeNotifierProxyProvider0 extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-   String text;
+    String text;
 
     switch (locale.languageCode) {
       case 'ko':

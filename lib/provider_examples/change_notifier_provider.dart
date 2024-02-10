@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart' as provider;
 import 'package:provider_sample/consts/github_url.dart';
-import 'package:provider_sample/models/for_change_notifier_provider/counter_model.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_provider/counter_model.dart';
 import 'package:provider_sample/widgets/text.dart';
 
-import '../models/for_change_notifier_proxy_providers/login_state.dart';
-import '../models/for_change_notifier_proxy_providers/user_profile.dart';
+import '../models_and_providers//for_change_notifier_proxy_providers/login_state.dart';
+import '../models_and_providers//for_change_notifier_proxy_providers/user_profile.dart';
 
 class ChangeNotifierProvider extends StatelessWidget {
   final Locale locale;

@@ -4,22 +4,22 @@ import 'package:provider/provider.dart';
 import 'package:provider_sample/app_localizations_delegate.dart';
 import 'package:provider_sample/consts/config_keywords.dart';
 import 'package:provider_sample/home_page.dart';
-import 'package:provider_sample/models/for_change_notifier_provider/counter_model.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/location_provider.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/login_state.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/settings_notifier.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/theme_settings_provider.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/user_profile.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/weather_provider.dart';
-import 'package:provider_sample/models/tab_info.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_provider/counter_model.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/location_provider.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/login_state.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/settings_notifier.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/theme_settings_provider.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/user_profile.dart';
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/weather_provider.dart';
+import 'package:provider_sample/models_and_providers//tab_info.dart';
 import 'package:provider_sample/provider_examples/change_notifier_proxy_providers/supabase_notifier.dart';
 import 'package:provider_sample/services/data_service.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
-import 'package:provider_sample/models/for_change_notifier_proxy_providers/user.dart'
+import 'package:provider_sample/models_and_providers//for_change_notifier_proxy_providers/user.dart'
     as user;
 
-import 'models/for_change_notifier_proxy_providers/app_settings_provider.dart';
-import 'models/for_change_notifier_proxy_providers/settings.dart';
+import 'models_and_providers//for_change_notifier_proxy_providers/app_settings_provider.dart';
+import 'models_and_providers//for_change_notifier_proxy_providers/settings.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();

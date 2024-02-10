@@ -1,7 +1,7 @@
 import 'dart:convert';
 
 import 'package:flutter/services.dart';
-import 'package:provider_sample/models/tab_info.dart';
+import 'package:provider_sample/models_and_providers//tab_info.dart';
 
 Future<List<TabInfo>> loadToTabInfo() async {
   final jsonString = await rootBundle.loadString('assets/tab_info.json');
